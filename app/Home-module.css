@@ -1,0 +1,265 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .gradientText0 {
+    background: -webkit-linear-gradient(#bfa3da, #84309c, #c735b0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .gradientText1 {
+    background: -webkit-linear-gradient(#a79af9, #7aa8d2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .gradientText2 {
+    background: -webkit-linear-gradient(#bfa3da, #743f93);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .gradientText3 {
+    background: -webkit-linear-gradient(#c35ab1, #e9a8d9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .title a:hover,
+  .title a:focus,
+  .title a:active {
+    text-decoration: underline;
+    text-decoration-color: #84309c;
+  }
+  
+  .title {
+    line-height: 1.15;
+    font-size: 4rem;
+  }
+  
+  .title,
+  .description {
+    text-align: left;
+  }
+  
+  .connect {
+    margin-bottom: 2rem;
+  }
+  
+  .description {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+  
+  .code {
+    background: #555;
+    border-radius: 5px;
+    padding: 0.5em;
+    font-size: 1.1rem;
+  }
+  
+  .grid {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #131313;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width: 440px;
+    overflow: none;
+    border: none;
+  }
+  
+  .cardText {
+    padding: 1rem;
+  }
+  
+  .card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 12px;
+    border: none;
+  }
+  
+  .card:hover,
+  .card:focus,
+  .card:active {
+    background-color: #272c34;
+    opacity: 80%;
+  }
+  
+  .card h2 {
+    margin: 0 0 0.75rem 0;
+  }
+  
+  .card p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  
+  .logo {
+    height: 1em;
+    margin-left: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      margin-left: 0;
+    }
+    .grid {
+      width: 100%;
+      flex-direction: column;
+    }
+    .title {
+      font-size: 3rem;
+      line-height: 1.15;
+    }
+  }
+  
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+  
+  .addressContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    border: #555 solid 1px;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 40%;
+  }
+  .addressHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: #555 solid 1px;
+  }
+  
+  .addressListContainer {
+    width: 100%;
+  }
+  .addressListHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .addContactContainer {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000080;
+  }
+  .addContactCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #131313;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 30%;
+    height: 40%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .addContactTriggerButton {
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+  }
+  .closeButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  .addContactForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .addContactForm input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: #555 solid 1px;
+  }
+  .addContactButton {
+    position: absolute !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    margin: 1rem !important;
+    cursor: pointer !important;
+  }
+  
+  .contactCardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    background-color: #131313;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    height: 20%;
+    margin-bottom: 10px;
+  }
+  .contactCardInfo p {
+    font-size: 0.75rem;
+  }
+  .removeContactButton {
+    min-width: 32px !important;
+    min-height: 24px !important;
+    cursor: pointer !important;
+    padding: 0.5rem !important;
+    border-radius: 5px !important;
+    background-color: lightcoral !important;
+    color: #fff !important;
+    border: none !important;
+    margin-left: 1rem !important;
+  }
